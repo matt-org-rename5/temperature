@@ -1,0 +1,14 @@
+action_id: trunk-single-player-auto-upgrade
+date: 2023-02-14 20:54:31
+run: trunk upgrade cli --single-player-only -n --no-progress --on-upgrade=false --allow-daemon-start=false
+run_from: ""
+trigger: schedule 24h+1h
+result:
+  exit_code: 109
+  out: "⡿ Downloading Trunk 0.16.1-beta...\n\x1b[1F\x1b[0K\x1b[0;32m✔\x1b[0m Downloading Trunk 0.16.1-beta... done\n⡿ Unpacking Trunk...\n\x1b[1F\x1b[0K\x1b[0;32m✔\x1b[0m Unpacking Trunk... done\n\n"
+  err: "The following arguments were not expected: --allow-daemon-start=false --on-upgrade=false -n --single-player-only cli\nRun with --help for more information.\n"
+timestamp: 1676408071
+full_timestamp:
+  nanos: 301101000
+  seconds: 1676408071
+trunk_version: 1.4.1
